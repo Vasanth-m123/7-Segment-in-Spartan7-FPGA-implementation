@@ -42,15 +42,15 @@ To design and simulate a Verilog HDL seven-segment display driver that converts 
 - Use the 4-bit DIP switches to provide binary inputs.
 - Observe the Seven Segment Display showing the corresponding digits 0–9.
 
----
+
 ## Logic Diagram
 
-<img width="589" height="511" alt="bcd2 7 segment" src="https://github.com/user-attachments/assets/e6922e13-6ec0-4f40-87ec-47be8862204d" />
+<img width="589" height="511" alt="image" src="https://github.com/user-attachments/assets/192a7cef-4ae2-42f1-9d75-f7ef5c29df12" />
 
 
 ## Verilog Code for Seven-Segment Display  
 
-```verilog
+```
 module bcd_to_7segment(
     input  [3:0] bcd,
     output reg [6:0] seg,
@@ -104,7 +104,10 @@ set_property -dict { PACKAGE_PIN A8 IOSTANDARD LVCMOS33 } [get_ports {an[3]}]
 ```
 ## FPGA Implementation Output
 
-<img width="782" height="540" alt="image" src="https://github.com/user-attachments/assets/6d549830-34b0-4916-9370-fc680e71f881" />
+![WhatsApp Image 2025-10-31 at 19 14 40_7fd18175](https://github.com/user-attachments/assets/a5e644e2-9e0e-4660-aa9a-76103b50b3fa)
+
+![WhatsApp Image 2025-10-31 at 19 13 56_b9219210](https://github.com/user-attachments/assets/7191fa79-3766-4f31-a291-8d77ade55257)
+
 
 
 ---
